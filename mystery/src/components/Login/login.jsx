@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 
 
-const API_URL = "http://localhost:1000";
+const API_URL = "https://mystery-4k3a.onrender.com";
 
 const Login = () => {
   const navigate = useNavigate();

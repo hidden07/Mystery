@@ -7,7 +7,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import Bear from "../../assets/question-page/bear_final.png";
 import Cat from "../../assets/question-page/cat_final.png";
 
-const API_URL = "http://localhost:1000";
+const API_URL = "https://mystery-4k3a.onrender.com";
 
 const Question = () => {
   const navigate = useNavigate();

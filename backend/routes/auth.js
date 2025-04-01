@@ -12,7 +12,7 @@ router.post("/login", async (req, res) => {
             return res.status(400).json({ message: "Email and password are required" });
         }
 
-        if (email !== "my@gmail.com") {
+        if (email !== "charmi22@gmail.com") {
             return res.status(401).json({ message: "Unauthorized: Invalid credentials" });
         }
 
@@ -22,7 +22,7 @@ router.post("/login", async (req, res) => {
         }
 
         const isMatch = await bcrypt.compare(password, user.password);
-        if (!isMatch || password !== "Mystery07") {
+        if (!isMatch || password !== "Charmi@07") {
             return res.status(401).json({ message: "Unauthorized: Invalid credentials" });
         }
 

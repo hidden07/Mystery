@@ -10,7 +10,7 @@ import penguin from '../../assets/home-page/peguin_final.png';
 import flowerpot from '../../assets/home-page/flower-pot.png';
 import Flower from '../../assets/home-page/flower_final.png';
 
-const API_URL = "http://localhost:1000";
+const API_URL = "https://mystery-4k3a.onrender.com";
 
 const Home = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);

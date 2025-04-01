@@ -6,7 +6,7 @@ import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 import axios from "axios";
 
-const API_URL = "http://localhost:1000";
+const API_URL = "https://mystery-4k3a.onrender.com";
 
 const Secret = () => {
   const navigate = useNavigate();

@@ -10,7 +10,7 @@ import AboutFlower from '../../assets/about-page/flower_final.png';
 import Rabbit from '../../assets/about-page/rabbit_final.png';
 
 
-const API_URL = "http://localhost:1000";
+const API_URL = "https://mystery-4k3a.onrender.com";
 
 const About = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);

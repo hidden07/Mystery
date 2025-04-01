@@ -8,7 +8,7 @@ import Cuple from "../../assets/hidden-page/boy-girl_final.png";
 import HiddenFlower from "../../assets/hidden-page/flower_final.png";
 import axios from "axios";
 
-const API_URL = "http://localhost:1000";
+const API_URL = "https://mystery-4k3a.onrender.com";
 
 const Hidden = () => {
   const navigate = useNavigate();

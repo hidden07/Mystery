@@ -9,7 +9,7 @@ import Elephant from "../../assets/mystry-page/elephant_final.png";
 import Flower1 from "../../assets/mystry-page/flower_final.png";
 import Flower2 from "../../assets/mystry-page/flower-2_final.png";
 
-const API_URL = "http://localhost:1000";
+const API_URL = "https://mystery-4k3a.onrender.com";
 
 const Mystery = () => {
   const navigate = useNavigate();
