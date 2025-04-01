@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 const bcrypt = require('bcrypt');
 const cors = require("cors");
 require("dotenv").config();
-require("./db/conn"); // Assuming this connects to MongoDB
+require("./db/conn"); 
 
 const app = express();
 const authRoutes = require('./routes/auth');
@@ -13,17 +13,16 @@ const reactionRoutes = require('./routes/reactions');
 const thoughtRoutes = require('./routes/thoughts');
 const User = require('./models/user');
 
-// Seed the single user
 const seedUser = async () => {
   try {
-    const existingUser = await User.findOne({ email: 'my@gmail.com' });
+    const existingUser = await User.findOne({ email: 'charmi22@gmail.com' });
     if (!existingUser) {
-      const hashedPassword = await bcrypt.hash('Mystery07', 10);
+      const hashedPassword = await bcrypt.hash('Charmi@07', 10);
       const user = new User({
-        email: 'my@gmail.com',
+        email: 'charmi22@gmail.com',
         password: hashedPassword,
-        username: 'Mystery',
-        role: 'user', // or 'admin' if preferred
+        username: 'Mystery07',
+        role: 'user', 
         isVerified: true
       });
       await user.save();
@@ -36,11 +35,10 @@ const seedUser = async () => {
   }
 };
 
-// Start server and seed user after MongoDB connection
 const startServer = async () => {
   try {
-    await mongoose.connection; // Ensure MongoDB is connected (handled by ./db/conn)
-    await seedUser(); // Seed the user
+    await mongoose.connection; 
+    await seedUser(); 
     app.use(cors({ origin: process.env.FRONTEND_URL || "http://localhost:5173" }));
     app.use(express.json());
     app.use('/api/v1', authRoutes);
